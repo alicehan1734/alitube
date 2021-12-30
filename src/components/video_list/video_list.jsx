@@ -6,8 +6,8 @@ const Videolist = (props) => (
       
   <ul className= {styles.videos}>
 
-    { props.data &&props.videos.map(video => (<Videoitems key={video.snippet.channelId} video={video}/>) )}
-    <h1>없다</h1>
+    { props.data && props.videos.map(video => (<Videoitems key={video.snippet.channelId} video={video}/>) )}
+
   </ul>
 
   );
