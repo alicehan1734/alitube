@@ -1,13 +1,12 @@
-.constainer {
+.video {
   display: flex;
   align-items: center;
-  width: 50%;
   box-sizing: border-box;
   border: 1px solid lightgray;
   margin-bottom: 0.2em;
   cursor : pointer;
   transition: transform 250ms ease-in;
-
+  font-family:'Ubuntu', sans-serif;
 }
 
 
@@ -16,13 +15,21 @@
 }
 .title, .channel {
   margin : 0;
+  margin-left: 1rem;
 }
 
+.title{
+  font-size: 1.2rem;
+  font-weight: 700;
+
+}
 .channel {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .thumbnails{
-width: 40%;
+width: 20rem;
+min-width: 20rem;
+height: 10rem;
 }
 

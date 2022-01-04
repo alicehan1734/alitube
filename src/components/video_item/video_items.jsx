@@ -3,8 +3,9 @@ import styles from './video_item.module.css'
 
 const Videoitems = ({video: {snippet}}) => 
 (
-  <li className={styles.video}>
+  <div className={styles.video}>
 
+  
     <img  className={styles.thumbnails}src={snippet.thumbnails.medium.url} alt= "youtube thumbnail" />
     
     <div>
@@ -12,7 +13,7 @@ const Videoitems = ({video: {snippet}}) =>
       <p className={styles.channel}>{snippet.channelTitle}</p>
     </div>
   
-  </li>
+  </div>
 )
 
 
