@@ -1,0 +1,56 @@
+header{
+  display: flex;
+  height: 4rem;
+  padding: 1.2em 1.5em;
+  background-color: #00A8FF;
+  color:white;
+  position: fixed;
+  top: 0;
+  left:0;
+  transition: 0.6s;
+  z-index: 100000;
+  width: 100%;
+  font-family: 'Secular One', sans-serif;
+}
+
+.sticky{
+  padding: 0.5em 1.5em;
+  background-color: white;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  margin-right: 1em;
+}
+
+.logo > img{
+  width: 3rem;
+}
+
+.input{
+  flex-basis: 80%;
+  font-size: 1.2rem;
+  outline: 0;
+  font-family: 'Secular One', sans-serif;
+}
+
+.button {
+  background-color: #00A8FF;
+  color: white;
+  border: 2px solid #00A8FF;
+  font-family: 'Secular One', sans-serif;
+  padding: 10px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: white; 
+  color: #00A8FF;
+}
