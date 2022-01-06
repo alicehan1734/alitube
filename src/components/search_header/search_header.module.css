@@ -24,6 +24,9 @@ header{
   margin-right: 1em;
 }
 
+.logo > div{
+  font-size: 2em;
+}
 .logo > img{
   width: 3rem;
 }

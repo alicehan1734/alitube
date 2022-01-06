@@ -5,7 +5,8 @@ const SearchHeader = () => {
   return (
     <header>
       <div className={styles.logo}>
-      <img src="/images/logo.png" alt="logo"/>
+      {/* <img src="/images/logo.png" alt="logo"/> */}
+      <div>📺</div>
       <h1>ALITUBE</h1>
       </div>
       <input  className={styles.input} type="search" placeholder='Search...'/>
