@@ -2,13 +2,12 @@ import React from 'react';
 import Videoitems from '../video_item/video_items';
 import styles from './video_list.module.css'
 
-const Videolist = (props) => {
+const Videolist = ({videos,onVideoClick,display}) => {
 
-  console.log(props.videos)
   return(
-    <div className= {styles.videos}>
+    <div className= {display != "list"? styles.videos : styles.grid}>
 
-    { props.videos.map(video => (<Videoitems key={video.id} video={video}/>) )}
+    { videos.map(video => (<Videoitems key={video.id} display={display} video={video} onVideoClick={onVideoClick}/>) )}
 
   </div>
   )

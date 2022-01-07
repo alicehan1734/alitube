@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import styles from './search_header.module.css'
 
-const SearchHeader = ({onSearch}) => {
+const SearchHeader = ({onSearch, reset}) => {
 
   const inputRef = useRef();
 
@@ -23,7 +23,7 @@ const SearchHeader = ({onSearch}) => {
 
   return (
     <header>
-      <div className={styles.logo}>
+      <div className={styles.logo} onClick={()=>reset()}>
       {/* <img src="/images/logo.png" alt="logo"/> */}
       <div>📺</div>
       <h1>ALITUBE</h1>
