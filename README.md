@@ -12,6 +12,6 @@
 ## Technologies Used
 
 - Html
-- CSS (POSTCSS)
+- CSS (PostCSS)
 - React
 - Using YoutubeApi with axios and PostMan
