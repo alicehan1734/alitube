@@ -5,7 +5,7 @@ import styles from './video_list.module.css'
 const Videolist = ({videos,onVideoClick,display}) => {
 
   return(
-    <div className= {display != "list"? styles.videos : styles.grid}>
+    <div className= {display !== "list"? styles.videos : styles.grid}>
 
     { videos.map(video => (<Videoitems key={video.id} display={display} video={video} onVideoClick={onVideoClick}/>) )}
 

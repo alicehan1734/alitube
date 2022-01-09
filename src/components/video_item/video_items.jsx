@@ -1,15 +1,12 @@
-import React from 'react';
+import React, { memo } from 'react';
 import styles from './video_item.module.css'
 
-const Videoitems = ({video, video: {snippet}, onVideoClick, display}) => {
+const Videoitems = memo(({video, video: {snippet}, onVideoClick, display}) => {
 
-  const displayType = display == "list" ? styles.list : styles.grid;
-
-  console.log(display);
 
   return (
     <div>
-        <div className={`${styles.video} ${display == "list" ? styles.list : styles.grid}`} onClick={()=>onVideoClick(video)}>
+        <div className={`${styles.video} ${display === "list" ? styles.list : styles.grid}`} onClick={()=>onVideoClick(video)}>
       
       <img className={styles.thumbnails}src={snippet.thumbnails.medium.url} alt= "youtube thumbnail" />
       
@@ -23,8 +20,6 @@ const Videoitems = ({video, video: {snippet}, onVideoClick, display}) => {
 
   )
   
-}
-
-;
+})
 
 export default Videoitems;

@@ -5,4 +5,26 @@
 
 .description{
   white-space: pre-wrap;
+  font-family: 'Secular One', sans-serif;
+  font-weight: 200;
+}
+
+hr{
+  background-color: #00A8FF;
+}
+
+@media screen and (max-width: 1000px) {
+  .detail{
+    margin-top: 10.7rem;
+  }
+
+  iframe{
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  iframe{
+    height: 250px;
+  }
 }

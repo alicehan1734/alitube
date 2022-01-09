@@ -1,0 +1,13 @@
+.footer{
+  height: 6em;
+  width: 100%;
+  background-color: white;
+  font-family: 'Secular One', sans-serif;
+  justify-content: center;
+  text-align: center;
+  padding-top: 4em;
+}
+
+.footer > span{
+  color: #00A8FF;
+}

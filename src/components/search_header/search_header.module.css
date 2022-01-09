@@ -13,18 +13,27 @@ header{
   font-family: 'Secular One', sans-serif;
 }
 
+h1{
+  margin-left: 5px;
+}
 .sticky{
   padding: 0.5em 1.5em;
   background-color: white;
 }
 
 .logo{
+  flex-basis: 15%;
+
   display: flex;
   align-items: center;
   margin-right: 1em;
   cursor: pointer;
 }
 
+.logo:hover{
+  transition: 0.8s;
+  color: yellow;
+}
 .logo > div{
   font-size: 2em;
 }
@@ -33,7 +42,8 @@ header{
 }
 
 .input{
-  flex-basis: 80%;
+  flex-basis: 70%;
+  width: 70%;
   font-size: 1.2rem;
   outline: 0;
   font-family: 'Secular One', sans-serif;
@@ -52,9 +62,30 @@ header{
   margin: 0;
   transition-duration: 0.4s;
   cursor: pointer;
+  margin-left: 5px;
 }
 
 .button:hover {
   background-color: white; 
   color: #00A8FF;
+}
+
+
+@media screen and (max-width: 1000px) {
+  header{
+    display: block;
+    height: auto;
+  }
+  .button {
+    padding: 5px 5px;
+  }
+
+}
+
+
+@media screen and (max-width: 500px) {
+  .input{
+    flex-basis: 60%;
+    width:60%;
+}
 }

@@ -1,7 +1,7 @@
-import React, { useRef } from 'react';
+import React, { memo, useRef } from 'react';
 import styles from './search_header.module.css'
 
-const SearchHeader = ({onSearch, reset}) => {
+const SearchHeader = memo(({onSearch, reset}) => {
 
   const inputRef = useRef();
 
@@ -28,12 +28,13 @@ const SearchHeader = ({onSearch, reset}) => {
       <div>📺</div>
       <h1>ALITUBE</h1>
       </div>
+      
       <input  ref={inputRef} className={styles.input} type="search" placeholder='Search...' onKeyPress={onKeyPress}/>
       <button  className={styles.button} type="submit" onClick={onClick}>
         Search
       </button>
     </header>
   );
-};
+})
 
 export default SearchHeader;
