@@ -1,7 +1,6 @@
 # <a href="https://heeyeonhan.com/alitube/" target="_blank">ALITUBE</a>
 
 [![Repository Status](https://img.shields.io/badge/Repository%20Status-Maintained-dark%20green.svg)](https://github.com/alicehan1734/alitube)
-![Latest Release](https://img.shields.io/github/last-commit/alicehan1734/alitube)
 [![Website Status](https://img.shields.io/badge/Website%20Status-Online-green)](https://heeyeonhan.com/alitube/)
 [![Author](https://img.shields.io/badge/Author-Heeyeon%20Han-blue.svg)](https://www.linkedin.com/in/alicehan1734/)
 
@@ -9,6 +8,10 @@
  
  Link - https://heeyeonhan.com/alitube/
  
+## Demo
+![](./demo/ALITUBE.gif)
+
+
 ## Technologies Used
 
 - Html
